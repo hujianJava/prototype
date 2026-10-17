@@ -28,6 +28,8 @@ description: 产品经理/原型负责人专用：按公司标准产出可直接
 3. `/prototype` — 对话迭代原型，每轮可演示就 commit（摘要含老板反馈要点）；老板用局域网 URL 直接点，反馈原话直接转给 AI 改。
 4. 交付 = 调用 `/prototype-export`：推送到共享 Git，或导出含完整历史的 git bundle；然后发交接消息（模板见下）。到此为止，不要跑 /spec-freeze、/implement、/accept。
 
+**改动归属（硬规则）**：原型页面的任何新增/修改都必须通过 `/prototype`；`DESIGN.md` / 视觉风格的任何调整都必须通过 `/design`。不要绕过技能直接改文件——mock 数据边界、三态要求、每轮提交、设计 tokens 约束都由技能承载，跳过技能这些保证全部失效。
+
 ## 交付前自检（逐条打勾，不过不交）
 
 - [ ] `git status` 干净；`git log` 每轮提交都带"改动 + 老板反馈要点"
