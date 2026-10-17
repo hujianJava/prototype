@@ -34,7 +34,7 @@ sha256sum <项目名>-<YYYYMMDD>.bundle    # Windows: certutil -hashfile <file> 
 
 ## 交接清单（每次导出必附）
 
-在项目根生成 `EXPORT-INFO.md`，或直接写进发给开发的交接消息：
+两种方式任选：直接写进发给开发的交接消息（推荐，不产生文件）；或生成 `EXPORT-INFO.md`——**必须在推送/打包之前随改动一起提交**（`prototype: 导出清单`），否则未提交的文件不会进入历史，开发也收不到。内容：
 
 - 项目名 / 仓库地址或 bundle 文件名
 - 分支与最新提交哈希、提交总数
